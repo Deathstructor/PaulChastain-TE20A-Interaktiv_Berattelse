@@ -1,5 +1,4 @@
-﻿using Internal;
-using System;
+﻿using System;
 
 beginning();
 
@@ -22,6 +21,7 @@ static void beginning() {
     while(choice1 != "money" && choice1 != "friends") {
         Console.ForegroundColor = ConsoleColor.DarkGray;
         Console.WriteLine("Enter 'Money' or 'Friends' to continue.");
+        Console.ForegroundColor = ConsoleColor.Yellow;
         choice1 = Console.ReadLine().ToLower();
     }
     
@@ -59,6 +59,7 @@ static void MoneyPath() {
     while (choice2 != "stealth" && choice2 != "loud") {
          Console.ForegroundColor = ConsoleColor.DarkGray;
          Console.WriteLine("Enter 'Stealth' or 'Loud' to continue.");
+         Console.ForegroundColor = ConsoleColor.Yellow;
          choice2 = Console.ReadLine().ToLower();
     }
 
@@ -90,6 +91,7 @@ static void FriendPath() {
     while (choice2 != "stopped" && choice2 != "running") {
         Console.ForegroundColor = ConsoleColor.DarkGray;
         Console.WriteLine("Enter 'Stopped' or 'Running' to continue.");
+        Console.ForegroundColor = ConsoleColor.Yellow;
         choice2 = Console.ReadLine().ToLower();
     }
 
@@ -128,15 +130,44 @@ static void StealthPath() {
     Console.WriteLine("whie it's running or try to sneak off the train when it arrives in Dallas?");
     Console.WriteLine();
 
-    while (choice3 != "") {
+    while (choice3 != "dallas" && choice3 != "jump") {
         Console.ForegroundColor = ConsoleColor.DarkGray;
-        Console.WriteLine("Enter 'Dallas' or 'Running' to continue.")
+        Console.WriteLine("Enter 'Dallas' or 'Jump' to continue.");
+        Console.ForegroundColor = ConsoleColor.Yellow;
         choice3 = Console.ReadLine().ToLower();
+    }
+
+    if(choice3 == "dallas") {
+        Console.ForegroundColor = ConsoleColor.White;
+        Console.Clear();
+        DallasPath();
+    } else {
+        Console.ForegroundColor = ConsoleColor.White;
+        Console.Clear();
+        JumpPath();
     }
 }
 
 static void LoudPath() {
+    Console.WriteLine("The gang decided that it would be better to do it loud. Just get on the train");
+    Console.WriteLine("quickly, find the loot, and get off the train. Sounds easy right?");
+    Console.WriteLine();
+    Console.WriteLine("As soon as the train arrived at the station in Alexandria, they got on the");
+    Console.WriteLine("train. Many shots were fired as the gang tried to get to the loot, and many");
+    Console.WriteLine("lost their lives, but they finally got to the loot. They looted the train,");
+    Console.WriteLine("but when they where on their way off of the train, they realized that they");
+    Console.WriteLine("were completely surrounded by the police. The gang only saw one way out;");
+    Console.WriteLine("to go all guns blazing. Unfortunately for the gang, the police were way");
+    Console.WriteLine("stronger, and everey gang member either got shot to death or put in prison");
+    Console.WriteLine("to later be hung in the middle of the city in front of a crowd.");
+    Console.WriteLine();
+    Console.WriteLine("The heist was therefore unsuccessful and the entire gang got killed.");
+    Console.WriteLine();
 
+    Console.ForegroundColor = ConsoleColor.Green;
+    Console.WriteLine("This is ending 1/?");
+    Console.WriteLine("Press enter to exit.");
+    Console.ReadLine();
 }
 
 
@@ -149,5 +180,18 @@ static void StoppedPath() {
 }
 
 static void RunningPath() {
+
+}
+
+
+
+
+
+//Tredje valet, andra för "Money Path": "Dallas Path" och "Jump Path"
+static void DallasPath() {
+
+}
+
+static void JumpPath() {
 
 }
