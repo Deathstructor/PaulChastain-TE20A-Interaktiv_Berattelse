@@ -56,7 +56,7 @@ static void MoneyPath() {
     Console.WriteLine("Should they do it stealth or loud?");
     Console.WriteLine();
 
-    while (choice2 != "stealth" && choice2 != "loud") {
+    while(choice2 != "stealth" && choice2 != "loud") {
          Console.ForegroundColor = ConsoleColor.DarkGray;
          Console.WriteLine("Enter 'Stealth' or 'Loud' to continue.");
          Console.ForegroundColor = ConsoleColor.Yellow;
@@ -88,7 +88,7 @@ static void FriendPath() {
     Console.WriteLine("Should they stop the train or jump on the train while it's running?");
     Console.WriteLine();
 
-    while (choice2 != "stopped" && choice2 != "running") {
+    while(choice2 != "stopped" && choice2 != "running") {
         Console.ForegroundColor = ConsoleColor.DarkGray;
         Console.WriteLine("Enter 'Stopped' or 'Running' to continue.");
         Console.ForegroundColor = ConsoleColor.Yellow;
@@ -130,7 +130,7 @@ static void StealthPath() {
     Console.WriteLine("whie it's running or try to sneak off the train when it arrives in Dallas?");
     Console.WriteLine();
 
-    while (choice3 != "dallas" && choice3 != "jump") {
+    while(choice3 != "dallas" && choice3 != "jump") {
         Console.ForegroundColor = ConsoleColor.DarkGray;
         Console.WriteLine("Enter 'Dallas' or 'Jump' to continue.");
         Console.ForegroundColor = ConsoleColor.Yellow;
@@ -176,7 +176,45 @@ static void LoudPath() {
 
 //Andra valet, första för "Friend Path": "Stopped Path" och "Running Path"
 static void StoppedPath() {
+    string choice2 = "";
 
+    Console.WriteLine("Stopping the train would is the smartest thing to do, it would make the whole");
+    Console.WriteLine("thing much easier.");
+    Console.WriteLine();
+    Console.WriteLine("To stop the train, they would have to do something that will force it to stop.");
+    Console.WriteLine("The best thing they could come up with was to blow up the track and to put a");
+    Console.WriteLine("large obstacle on the track, so they stole a large wagon and some barrels and");
+    Console.WriteLine("put them on the track. It was now time to wait for the train to arrive.");
+    Console.WriteLine();
+    Console.WriteLine("When the train arrived it saw the obstacles and stopped. The gang took the train");
+    Console.WriteLine("driver as a hostage and went in to the train. There were of course many guards,");
+    Console.WriteLine("but because they were more or less in the middle of nowhere they could use their");
+    Console.WriteLine("firearms to kill them. They got to the cells and opened the cells where their");
+    Console.WriteLine("were, but they saw that the rest of the prisoners were old enimies. That raised");
+    Console.WriteLine("another question: should they only release their friends, release everyone, or");
+    Console.WriteLine("kill all of their old enemies?");
+    Console.WriteLine();
+
+    while(choice2 != "friends" && choice2 != "everyone" && choice2 != "kill") {
+        Console.ForegroundColor = ConsoleColor.DarkGray;
+        Console.WriteLine("Enter 'Friends', 'Everyone' or 'Kill' to continue.");
+        Console.ForegroundColor = ConsoleColor.Yellow;
+        choice2 = Console.ReadLine().ToLower();
+    }
+
+    if(choice2 == "friends") {
+        Console.ForegroundColor = ConsoleColor.White;
+        Console.Clear();
+        OnlyFriendsPath();
+    } else if (choice2 == "everyone") {
+        Console.ForegroundColor = ConsoleColor.White;
+        Console.Clear();
+        EveryonePath();
+    } else {
+        Console.ForegroundColor = ConsoleColor.White;
+        Console.Clear();
+        KillPath();
+    }
 }
 
 static void RunningPath() {
@@ -193,5 +231,41 @@ static void DallasPath() {
 }
 
 static void JumpPath() {
+    Console.WriteLine("After some reflecting, the gang decided that they should try to jump of the.");
+    Console.WriteLine("train while it's running.");
+    Console.WriteLine();
+    Console.WriteLine("The gang went to one of the wagons that were \"open\", that didn't have any");
+    Console.WriteLine("walls or roof to mak it easier to jump. After some hesitation they all jumped");
+    Console.WriteLine("one after one. Unfortunately for the gang, it wasn't as easy to escape by");
+    Console.WriteLine("jumping off the train as they initially thought it would be. Because of the");
+    Console.WriteLine("speed of the train they all died from not landing properly and breaking their");
+    Console.WriteLine("or crushing something vital in the body, and one even fell under the train");
+    Console.WriteLine("and got sliced in half by the train.");
+    Console.WriteLine();
+    Console.WriteLine("They didn't succeed with the heist as they all died from jumping off the train.");
 
+    Console.ForegroundColor = ConsoleColor.Green;
+    Console.WriteLine("This is ending 2/?");
+    Console.WriteLine("Press enter to exit.");
+    Console.ReadLine();
+}
+
+
+
+
+
+//Tredje valet, andra för "Friend Path"; "Only Friends Path", "Everyone Path" och "Kill Path"
+static void OnlyFriendsPath() {
+    Console.WriteLine("Friend test");
+    Console.ReadLine();
+}
+
+static void EveryonePath() {
+    Console.WriteLine("Everyone test");
+    Console.ReadLine();
+}
+
+static void KillPath() {
+    Console.WriteLine("Kill test");
+    Console.ReadLine();
 }
