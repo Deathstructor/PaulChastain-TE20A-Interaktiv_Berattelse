@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System.Net.Http.Headers;
+using System;
 
 beginning();
 
@@ -40,7 +41,7 @@ static void beginning() {
 
 
 
-//Första valet: väg 1A och 1B
+//Första valet: "Money Path" och "Friend Path"
 static void MoneyPath() {
     string choice2 = "";
 
@@ -165,7 +166,7 @@ static void LoudPath() {
     Console.WriteLine();
 
     Console.ForegroundColor = ConsoleColor.Green;
-    Console.WriteLine("This is ending 1/?");
+    Console.WriteLine("This is ending 1/7");
     Console.WriteLine("Press enter to exit.");
     Console.ReadLine();
 }
@@ -218,7 +219,24 @@ static void StoppedPath() {
 }
 
 static void RunningPath() {
+    Console.WriteLine("Jumping on the while it's running wouldn't be easy, but they won't have to stop");
+    Console.WriteLine("the train, which means a lot more work.");
+    Console.WriteLine();
+    Console.WriteLine("It was now time for the gang to get on the train. They jumped onto their horses");
+    Console.WriteLine("and rode to the railway. The train was ahead of them, so they had do ride a bit,");
+    Console.WriteLine("but they eventually arrived next to the train. When they were about to jump on");
+    Console.WriteLine("the train, a guard noticed them and alerted the rest of the guards on the train.");
+    Console.WriteLine("The gang tried to shoot the guards, but it was very hard to aim when they were");
+    Console.WriteLine("on the horses and they quickly got overwhelmed by the guards who shot everyone");
+    Console.WriteLine("in the gang to death in a matter of seconds.");
+    Console.WriteLine();
+    Console.WriteLine("The attempt to release their friends was unsuccessful as everyone died.");
+    Console.WriteLine();
 
+    Console.ForegroundColor =ConsoleColor.Green;
+    Console.WriteLine("This is ending 2/7");
+    Console.WriteLine("Press enter to exit.");
+    Console.ReadLine();
 }
 
 
@@ -227,7 +245,25 @@ static void RunningPath() {
 
 //Tredje valet, andra för "Money Path": "Dallas Path" och "Jump Path"
 static void DallasPath() {
+    Console.WriteLine("Going to dallas was probably the best idea as they wouldn't have to risk their");
+    Console.WriteLine("lifes, just to jump off the train.");
+    Console.WriteLine();
+    Console.WriteLine("The gang was now on it's way to Dallas. They had so much money that it could be");
+    Console.WriteLine("very risky to get it off the train without beeing noticed, especially since there");
+    Console.WriteLine("will be people there, waiting to get the money.");
+    Console.WriteLine();
+    Console.WriteLine("After some time, they finally arrived in Dallas. They had to act quick to not be");
+    Console.WriteLine("seen with the valuables. As if God wanted to help the gang for some reason, there");
+    Console.WriteLine("was a horse with an empty wagon right outside the traincart. They quickly dumped");
+    Console.WriteLine("all the loot in the wagon and stole it to ride out of Dallas, back to their camp.");
+    Console.WriteLine();
+    Console.WriteLine("The heist was successful! The gang managed to steal all the loot and get away.");
+    Console.WriteLine();
 
+    Console.ForegroundColor = ConsoleColor.Green;
+    Console.WriteLine("This is ending 3/7");
+    Console.WriteLine("Press enter to exit.");
+    Console.ReadLine();
 }
 
 static void JumpPath() {
@@ -243,9 +279,10 @@ static void JumpPath() {
     Console.WriteLine("and got sliced in half by the train.");
     Console.WriteLine();
     Console.WriteLine("They didn't succeed with the heist as they all died from jumping off the train.");
+    Console.WriteLine();
 
     Console.ForegroundColor = ConsoleColor.Green;
-    Console.WriteLine("This is ending 2/?");
+    Console.WriteLine("This is ending 4/7");
     Console.WriteLine("Press enter to exit.");
     Console.ReadLine();
 }
@@ -256,16 +293,49 @@ static void JumpPath() {
 
 //Tredje valet, andra för "Friend Path"; "Only Friends Path", "Everyone Path" och "Kill Path"
 static void OnlyFriendsPath() {
-    Console.WriteLine("Friend test");
+    Console.WriteLine("The gang decided to just release their friends. Why should they release their");
+    Console.WriteLine("enemies? That would be really stupid, so they decided to leave the bastards in");
+    Console.WriteLine("the train. The gang was now finally complete and back together!");
+    Console.WriteLine();
+    Console.WriteLine("The rescue was successful! The gang is now complete.");
+    Console.WriteLine();
+
+    Console.ForegroundColor = ConsoleColor.Green;
+    Console.WriteLine("This is ending 5/7");
+    Console.WriteLine("Press enter to continue.");
     Console.ReadLine();
 }
 
 static void EveryonePath() {
-    Console.WriteLine("Everyone test");
+    Console.WriteLine("The gang decided to release everyone and not just their friends. Maybe they");
+    Console.WriteLine("could convert their enemies to join the gang and strengthen it? At first,");
+    Console.WriteLine("everything seemed to be ok, but then they heard multiple gunshots, and many");
+    Console.WriteLine("in the gang dropped dead. Their enemies had decided to still be their enemies");
+    Console.WriteLine("and they managed to kill Johns entire gang with the guards weapons before the");
+    Console.WriteLine("gang even had time to register what happened.");
+    Console.WriteLine();
+    Console.WriteLine("The rescue was kind of successful, but they got killed after the rescue.");
+    Console.WriteLine();
+    
+    Console.ForegroundColor = ConsoleColor.Green;
+    Console.WriteLine("This is ending 6/7");
+    Console.WriteLine("Press enter to continue.");
     Console.ReadLine();
 }
 
 static void KillPath() {
-    Console.WriteLine("Kill test");
+    Console.WriteLine("The gang decided that they shouldn't show their enemies any mercy and they");
+    Console.WriteLine("therefore decided to kill all their enemies. They released their friends");
+    Console.WriteLine("and got them out of the train. Then they all gathered lots of flammable");
+    Console.WriteLine("material, filled the train with it and lit it on fire. Then they left left");
+    Console.WriteLine("with their newly released friends to go back to their camp.");
+    Console.WriteLine();
+    Console.WriteLine("The rescue was successful! The gang released their friends and they killed");
+    Console.WriteLine("a lot of their enemies.");
+    Console.WriteLine();
+    
+    Console.ForegroundColor = ConsoleColor.Green;
+    Console.WriteLine("This is ending 7/7");
+    Console.WriteLine("Press enter to continue.");
     Console.ReadLine();
 }
